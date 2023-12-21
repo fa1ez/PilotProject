@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 
+//assests
+import UL from "./underline.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -27,7 +30,7 @@ function App() {
         start: "top 40%",
         end: "bottom 80%",
         scrub: true,
-        markers: true,
+        markers: false,
       },
       opacity: 0.2,
       stagger: 1,
@@ -86,6 +89,9 @@ function App() {
           Lorem ipsum dolor sit amet. At totam ipsa vel molestiae animi nam
           libero voluptate aut quis soluta et sapiente unde ut distinctio quae.
         </p>
+        <div className="underline">
+          <img src={UL} style={{width:"200px",backgroundColor:"white"}} />
+        </div>
       </div>
       <div
         style={{

@@ -12,3 +12,9 @@
   max-width: 80%;
   text-align: center;
 }
+
+.underline {
+  position: relative;
+  left: 0;
+  top: 0;
+}
